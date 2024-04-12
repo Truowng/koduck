@@ -496,6 +496,10 @@ img {
         border-radius: 10px;
         border-left: 4px solid $orange;
         background-color: #313131;
+        transition: all ease 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
         .text {
           span {
             color: $orange;
