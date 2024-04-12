@@ -242,10 +242,9 @@ img {
     }
     .title {
       font-family: $font-exo;
-      font-size: 64px;
+      font-size: 100px;
       font-weight: 700;
-      line-height: 76px;
-      max-width: 80%;
+      line-height: 1.5;
       text-align: center;
       text-transform: capitalize;
       margin-left: auto;
@@ -462,7 +461,6 @@ img {
 
   .tokenomics-content {
     width: 100%;
-    padding: 34.5px 45px 34.5px;
     border-radius: 16px;
     @include tablet {
       margin-top: 80px;
@@ -489,10 +487,26 @@ img {
       margin-top: 25px;
       .item {
         font-family: $font-dela;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 30px;
-        margin-bottom: 13px;
+        margin-bottom: 30px;
         color: $orange;
+        @include flex(space-between, center, 20px);
+        padding: 10px 20px;
+        border-radius: 10px;
+        border-left: 4px solid $orange;
+        background-color: #313131;
+        .text {
+          span {
+            color: $orange;
+            margin-right: 10px;
+          }
+        }
+        .token {
+          p {
+            text-align: center;
+          }
+        }
       }
     }
   }

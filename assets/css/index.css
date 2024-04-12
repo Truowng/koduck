@@ -297,10 +297,9 @@ img {
 }
 #banner .heading-block .title {
   font-family: "Exo 2", sans-serif;
-  font-size: 64px;
+  font-size: 100px;
   font-weight: 700;
-  line-height: 76px;
-  max-width: 80%;
+  line-height: 1.5;
   text-align: center;
   text-transform: capitalize;
   margin-left: auto;
@@ -542,7 +541,6 @@ img {
 }
 #tokenomics .tokenomics-content {
   width: 100%;
-  padding: 34.5px 45px 34.5px;
   border-radius: 16px;
 }
 @media only screen and (max-width: 991px) {
@@ -573,10 +571,25 @@ img {
 }
 #tokenomics .tokenomics-content .list .item {
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 30px;
-  margin-bottom: 13px;
+  margin-bottom: 30px;
   color: #f0b833;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #f0b833;
+  background-color: #313131;
+}
+#tokenomics .tokenomics-content .list .item .text span {
+  color: #f0b833;
+  margin-right: 10px;
+}
+#tokenomics .tokenomics-content .list .item .token p {
+  text-align: center;
 }
 
 #footer {
