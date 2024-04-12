@@ -122,7 +122,7 @@ img {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 @media only screen and (max-width: 991px) {
   #header {
@@ -191,6 +191,9 @@ img {
     font-size: 24px;
     line-height: 28px;
   }
+  #header .header-link-list .header-link-item a {
+    color: #000;
+  }
 }
 #header .header-link-list .header-link-item:hover a {
   color: #f0b833;
@@ -232,7 +235,6 @@ img {
   justify-content: unset;
   align-items: center;
   gap: 8px;
-  margin-right: 32px;
 }
 @media only screen and (max-width: 480px) {
   #header .social-list {
@@ -255,6 +257,8 @@ img {
   border: none;
   margin-left: 30px;
   width: 29px;
+  color: #fff;
+  background-color: transparent;
 }
 @media only screen and (max-width: 991px) {
   #header .menu-button {

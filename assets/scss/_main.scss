@@ -92,7 +92,7 @@ img {
 #header {
   backdrop-filter: blur(3px);
   position: relative;
-  z-index: 1;
+  z-index: 10;
   @include tablet {
     backdrop-filter: unset;
   }
@@ -144,6 +144,9 @@ img {
       @include tablet {
         font-size: 24px;
         line-height: 28px;
+        a {
+          color: $black;
+        }
       }
       &:hover {
         a {
@@ -184,7 +187,6 @@ img {
   }
   .social-list {
     @include flex(unset, center, 8px);
-    margin-right: 32px;
     @include mobile {
       margin-right: 0;
     }
@@ -208,6 +210,8 @@ img {
     border: none;
     margin-left: 30px;
     width: 29px;
+    color: $white;
+    background-color: transparent;
     @include tablet {
       display: block;
     }
