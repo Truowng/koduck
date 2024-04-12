@@ -45,17 +45,18 @@ img {
 
 .button {
   outline: none;
-  border: 1px solid $black;
-  border-radius: 500px;
+  border: 1px solid $orange;
+  border-radius: 10px;
   text-transform: uppercase;
   font-family: $font-dela;
-  color: $black !important;
+  color: $orange;
   background: transparent;
   text-align: center;
   padding: 12px 24px;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
   &:hover {
     background-color: $orange;
+    color: $black;
   }
 }
 
@@ -256,12 +257,10 @@ img {
         letter-spacing: 2px;
       }
       @include landscape-phone {
-        font-size: 54px;
-        line-height: 60px;
+        font-size: 80px;
       }
       @include mobile {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 60px;
       }
     }
     .desc {
@@ -269,9 +268,14 @@ img {
       margin-right: auto;
       max-width: 631px;
       text-align: center;
+      margin-bottom: 30px;
       @include landscape-phone {
         max-width: unset;
       }
+    }
+    .button {
+      display: block;
+      letter-spacing: 2px;
     }
   }
   .banner-slider {

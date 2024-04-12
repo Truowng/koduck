@@ -76,18 +76,19 @@ img {
 
 .button {
   outline: none;
-  border: 1px solid #000;
-  border-radius: 500px;
+  border: 1px solid #f0b833;
+  border-radius: 10px;
   text-transform: uppercase;
   font-family: "Dela Gothic One", sans-serif;
-  color: #000 !important;
+  color: #f0b833;
   background: transparent;
   text-align: center;
   padding: 12px 24px;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
 }
 .button:hover {
   background-color: #f0b833;
+  color: #000;
 }
 
 .heading-block .badge {
@@ -313,14 +314,12 @@ img {
 }
 @media only screen and (max-width: 767px) {
   #banner .heading-block .title {
-    font-size: 54px;
-    line-height: 60px;
+    font-size: 80px;
   }
 }
 @media only screen and (max-width: 480px) {
   #banner .heading-block .title {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 60px;
   }
 }
 #banner .heading-block .desc {
@@ -328,11 +327,16 @@ img {
   margin-right: auto;
   max-width: 631px;
   text-align: center;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width: 767px) {
   #banner .heading-block .desc {
     max-width: unset;
   }
+}
+#banner .heading-block .button {
+  display: block;
+  letter-spacing: 2px;
 }
 #banner .banner-slider {
   height: 600px;
